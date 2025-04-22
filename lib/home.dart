@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -74,6 +75,23 @@ class HomePage extends StatelessWidget {
                 },
                 child: const Text(
                   'Help & Support',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.deepPurple,
+                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                  elevation: 5,
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/sensor');
+                },
+                child: const Text(
+                  'Sensor Monitor',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),

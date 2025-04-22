@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:testauth/sensor.dart';
 import 'package:testauth/support.dart';
 import 'firebase_options.dart';
 import 'landing_path.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const HomePage(),
         '/profile': (context) => const ProfilePage(),
         '/support': (context) => const HelpSupportPage(),
+        '/sensor' : (context) => const SensorPage(),
       },
     );
   }
